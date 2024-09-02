@@ -1,0 +1,245 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+#post-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+  border: 1px solid pink;
+  padding: 10px;
+  border-radius: 10px;
+}
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.post-user-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.post-user-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post-username-time {
+  display: flex;
+  flex-direction: column;
+}
+.post-username {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+.posted-time {
+  display: flex;
+  gap: 5px;
+  font-size: 14px;
+  color: #777;
+}
+.posted-time span:first-child {
+  font-weight: bold;
+}
+
+.post-image{
+    display: flex;
+    justify-content: center;
+}
+.post-image img{
+    border-radius: 10px;
+    width: 80%;
+}
+
+.comments-holder {
+    max-width: 600px;
+    margin: 20px auto; /* Center the comments section */
+    padding: 15px;
+    background-color: #f4f4f4; /* Light grey background for the comments section */
+    border-radius: 8px; /* Rounded corners for the comment section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .comment {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px; /* Space between comments */
+  }
+  
+  .comment-user-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Make the user image circular */
+    overflow: hidden;
+    margin-right: 10px; /* Space between the image and text */
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensure the image covers the entire area */
+    }
+  }
+  
+  .comment-text-container {
+    background-color: pink;
+    padding: 10px;
+    border-radius: 5px;
+    flex: 1; /* Allow the text container to take up remaining space */
+  
+    h4 {
+      margin: 0 0 5px 0; /* Remove margin and add some space below the username */
+      font-size: 14px;
+      font-weight: bold; /* Bold the username */
+      color: #333; /* Dark color for the username */
+    }
+  
+    .comment-text {
+      margin: 0;
+      font-size: 14px;
+      color: #555; /* Medium grey color for the comment text */
+    }
+  }
+
+  
+
+  .comment-section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
+  
+  .comment-input {
+    flex-grow: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .comment-button {
+    padding: 15px 20px;
+    background-color: #ff5555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .comment-button:hover {
+    background-color: #ff4444;
+  }
+  
+.logout{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pink-button {
+    background-color: pink; 
+    color: black; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 25px; 
+    font-size: 16px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.pink-button:hover {
+    background-color: #af608a;
+}
+
+
+.post-section {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  resize: none; 
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+textarea:focus,
+input:focus {
+  border-color: #007bff; 
+  outline: none; 
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.post-button {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #ff69b4; 
+  color: white; 
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+.post-button:hover {
+  background-color: #ff1493; 
+  transform: translateY(-2px); 
+}
+
+.post-button:active {
+  background-color: #c71585; 
+  transform: translateY(0); 
+}
+
+@media (max-width: 600px) {
+  #post-container {
+    padding: 15px;
+  }
+
+  .post-header {
+    flex-direction: row;
+  }
+}

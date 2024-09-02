@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./post.css" />
+  </head>
+  <body>
+    <div class="logout">
+      <h1>Hello, <span id="logged-username">Username</span> 👋</h1>
+      <button onclick="logOut()" class="pink-button">Logout</button>
+    </div>
+
+    <!-- adding new post section -->
+    <section class="post-section">
+      <form onsubmit="handleAddNewPost()">
+        <div class="form-group">
+          <textarea
+            name="new-post"
+            id="new-post"
+            rows="5"
+            cols="30"
+            placeholder="What's on your mind?"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            placeholder="Add image URL"
+            id="new-post-img-url"
+          />
+        </div>
+        <div class="form-group">
+          <button type="submit" class="post-button">POST</button>
+        </div>
+      </form>
+    </section>
+    
+
+    <section id="post-container">
+      <div class="post">
+        <div class="post-header">
+          <div class="post-user-img">
+            <img src="https://i.ibb.co/cQcKfvb/Image01.png" alt="" srcset="" />
+          </div>
+          <div class="post-username-time">
+            <p class="post-username">Username</p>
+            <div class="posted-time">
+              <span>13</span>
+              <span>hours ago</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-text">
+          <p class="post-text-content">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias
+            excepturi quod natus quos perferendis debitis ad deleniti temporibus
+            fuga, corporis maxime eaque optio quisquam hic laboriosam non vel
+            ducimus consectetur suscipit iste blanditiis inventore doloribus
+            enim doloremque! Eius doloremque sunt cumque, pariatur eligendi
+            soluta ducimus necessitatibus non magni beatae ratione.
+          </p>
+        </div>
+
+        <div class="post-image">
+          <img src="https://i.ibb.co/cQcKfvb/Image01.png" alt="" srcset="" />
+        </div>
+
+        <!-- comments under a single post -->
+
+        <div class="comments-holder">
+          <div class="comment">
+            <div class="comment-user-image">
+              <img src="https://i.ibb.co/cQcKfvb/Image01.png" alt="" />
+            </div>
+          </div>
+          <div class="comment-text-container">
+            <h4>commented Username</h4>
+            <p class="comment-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus, minus.
+            </p>
+          </div>
+        </div>
+
+        <!-- new comment input field -->
+        <div class="comment-section">
+          <input
+            type="text"
+            placeholder="Post your comment"
+            class="comment-input"
+          />
+          <button class="comment-button">Comment</button>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <div class="post-user-img">
+            <img src="https://i.ibb.co/cQcKfvb/Image01.png" alt="" srcset="" />
+          </div>
+          <div class="post-username-time">
+            <p class="post-username">Username</p>
+            <div class="posted-time">
+              <span>13</span>
+              <span>hours ago</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-text">
+          <p class="post-text-content">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias
+            excepturi quod natus quos perferendis debitis ad deleniti temporibus
+            fuga, corporis maxime eaque optio quisquam hic laboriosam non vel
+            ducimus consectetur suscipit iste blanditiis inventore doloribus
+            enim doloremque! Eius doloremque sunt cumque, pariatur eligendi
+            soluta ducimus necessitatibus non magni beatae ratione.
+          </p>
+        </div>
+
+        <div class="post-image">
+          <img src="https://i.ibb.co/cQcKfvb/Image01.png" alt="" srcset="" />
+        </div>
+
+        <!-- comments under a single post -->
+
+        <div class="comments-holder">
+          <div class="comment">
+            <div class="comment-user-image">
+              <img src="https://i.ibb.co/cQcKfvb/Image01.png" alt="" />
+            </div>
+          </div>
+          <div class="comment-text-container">
+            <h4>commented Username</h4>
+            <p class="comment-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus, minus.
+            </p>
+          </div>
+        </div>
+
+        <!-- new comment input field -->
+        <div class="comment-section">
+          <input
+            type="text"
+            placeholder="Post your comment"
+            class="comment-input"
+          />
+          <button class="comment-button">Comment</button>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <div class="post-user-img">
+            <img src="https://i.ibb.co/cQcKfvb/Image01.png" alt="" srcset="" />
+          </div>
+          <div class="post-username-time">
+            <p class="post-username">Username</p>
+            <div class="posted-time">
+              <span>13</span>
+              <span>hours ago</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-text">
+          <p class="post-text-content">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias
+            excepturi quod natus quos perferendis debitis ad deleniti temporibus
+            fuga, corporis maxime eaque optio quisquam hic laboriosam non vel
+            ducimus consectetur suscipit iste blanditiis inventore doloribus
+            enim doloremque! Eius doloremque sunt cumque, pariatur eligendi
+            soluta ducimus necessitatibus non magni beatae ratione.
+          </p>
+        </div>
+
+        <div class="post-image">
+          <img src="https://i.ibb.co/cQcKfvb/Image01.png" alt="" srcset="" />
+        </div>
+
+        <!-- comments under a single post -->
+
+        <div class="comments-holder">
+          <div class="comment">
+            <div class="comment-user-image">
+              <img src="https://i.ibb.co/cQcKfvb/Image01.png" alt="" />
+            </div>
+          </div>
+          <div class="comment-text-container">
+            <h4>commented Username</h4>
+            <p class="comment-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus, minus.
+            </p>
+          </div>
+        </div>
+
+        <!-- new comment input field -->
+        <div class="comment-section">
+          <input
+            type="text"
+            placeholder="Post your comment"
+            class="comment-input"
+          />
+          <button class="comment-button">Comment</button>
+        </div>
+      </div>
+    </section>
+    <script src="./utils/calculateTimeDifference.js"></script>
+    <script src="./js/fetchData.js"></script>
+  </body>
+</html>
